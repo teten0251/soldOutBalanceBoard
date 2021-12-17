@@ -40,17 +40,34 @@ function showChart() {
     let oneMonthBox = document.getElementById("oneMonthBox");
     oneMonthBox.style.visibility = "visible";
 
+    // text box
     let textBox = document.getElementById("textBox");
     textBox.style.visibility = "visible";
 
-    // all chart
-    // const oneDayConfig = createConfig(balanceData, 1);
-    // const oneDayChart = new Chart(
-    //     document.getElementById('oneDayChart'),
-    //     oneDayConfig
-    // );
-    // var chartBox = document.getElementById("oneDayBox");
-    // chartBox.style.visibility = "visible";
+    let innerTextBox = document.getElementById("innerTextBox");
+    for (let i = 0; i < 30; i++) {
+        let text = "";
+        if (balanceData[i].items.length != 0 || balanceData[i].comment) {
+            text += "[" + balanceData[i].date + "]";
+        }
+        if (balanceData[i].items.length != 0) {
+            items = "";
+            for (let n = 0; n < balanceData[i].items.length; n++) {
+                if (n === 0) {
+                    items += balanceData[i].items[n];
+                } else {
+                    items += "/" + balanceData[i].items[n];
+                }
+            }
+            text += " [商品棚]" + items;
+        }
+        if (balanceData[i].comment) {
+            text += " [メモ]" + balanceData[i].comment;
+        }
+        const p = document.createElement("p");
+        p.textContent = text;
+        innerTextBox.appendChild(p);
+    }
 }
 
 function createConfig(balanceData, period) {
