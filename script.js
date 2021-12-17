@@ -61,13 +61,13 @@ function createConfig(balanceData, period) {
                 data: [balanceData[0].sales, balanceData[0].expenses, balanceData[0].sales - balanceData[0].expenses],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
-                    'rgba(255, 159, 64, 0.2)',
-                    'rgba(255, 205, 86, 0.2)'
+                    'rgba(132, 162, 212, 0.2)',
+                    'rgba(147, 202, 118, 0.2)'
                 ],
                 borderColor: [
                     'rgb(255, 99, 132)',
-                    'rgb(255, 159, 64)',
-                    'rgb(255, 205, 86)'
+                    'rgb(132, 162, 212)',
+                    'rgb(147, 202, 118)'
                 ],
                 borderWidth: 1
             }]
@@ -109,14 +109,14 @@ function createConfig(balanceData, period) {
                 },
                 {
                     label: '経費',
-                    backgroundColor: 'rgb(255, 159, 64)',
-                    borderColor: 'rgb(255, 159, 64)',
+                    backgroundColor: 'rgb(132, 162, 212)',
+                    borderColor: 'rgb(132, 162, 212)',
                     data: expensesData,
                 },
                 {
                     label: '利益',
-                    backgroundColor: 'rgb(255, 205, 86)',
-                    borderColor: 'rgb(255, 205, 86)',
+                    backgroundColor: 'rgb(147, 202, 118)',
+                    borderColor: 'rgb(147, 202, 118)',
                     data: benefitData,
                 }
             ]
