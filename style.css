@@ -1,12 +1,33 @@
+h1{
+    text-align: center;
+}
+#leftBox{
+    float: left;
+    width: 40%;
+}
+#rightBox{
+    float: right;
+    width: 60%;
+}
 #oneDayBox{
-    width : 400px;
-    height : 200px;
+    width: 80%;
+    margin: 0 auto;
+}
+#textBox{
+    font-size: 0.8rem;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+    height: 40vh;
+    margin-left: 10%;
+    overflow:scroll;
 }
 #oneWeekBox{
-    width : 400px;
-    height : 200px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 2%;
 }
 #oneMonthBox{
-    width : 400px;
-    height : 200px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 2%;
 }

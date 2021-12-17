@@ -19,7 +19,7 @@ function showChart() {
         document.getElementById('oneDayChart'),
         oneDayConfig
     );
-    var oneDayBox = document.getElementById("oneDayBox");
+    let oneDayBox = document.getElementById("oneDayBox");
     oneDayBox.style.visibility = "visible";
 
     // one week chart
@@ -28,7 +28,7 @@ function showChart() {
         document.getElementById('oneWeekChart'),
         oneWeekConfig
     );
-    var oneWeekBox = document.getElementById("oneWeekBox");
+    let oneWeekBox = document.getElementById("oneWeekBox");
     oneWeekBox.style.visibility = "visible";
 
     // one month chart
@@ -37,8 +37,11 @@ function showChart() {
         document.getElementById('oneMonthChart'),
         oneMonthConfig
     );
-    var oneMonthBox = document.getElementById("oneMonthBox");
+    let oneMonthBox = document.getElementById("oneMonthBox");
     oneMonthBox.style.visibility = "visible";
+
+    let textBox = document.getElementById("textBox");
+    textBox.style.visibility = "visible";
 
     // all chart
     // const oneDayConfig = createConfig(balanceData, 1);
