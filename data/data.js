@@ -15,5 +15,6 @@ window.SOLD_OUT_BALANCE = [
     { date: "2021/12/13", sales: 597200, expenses: 260480, items: [], comment: "" },
     { date: "2021/12/14", sales: 610600, expenses: 421060, items: [], comment: "" },
     { date: "2021/12/15", sales: 565000, expenses: 56000, items: [], comment: "" },
-    { date: "2021/12/16", sales: 665000, expenses: 86500, items: [], comment: "" }
+    { date: "2021/12/16", sales: 665000, expenses: 86500, items: [], comment: "" },
+    { date: "2021/12/17", sales: 3596000, expenses: 2757440, items: ["アイスクリーム", "オリハルコンの杖", "作業着"], comment: "気まぐれな妖精×20販売" }
 ]

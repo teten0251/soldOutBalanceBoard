@@ -1,6 +1,9 @@
 h1{
     text-align: center;
 }
+label{
+    font-size: 0.9rem;
+}
 #leftBox{
     float: left;
     width: 40%;
