@@ -5,7 +5,7 @@ window.SOLD_OUT_BALANCE = [
     { date: "2021/12/3", sales: 991000, expenses: 527200, items: ["ミノスノー", "ハイポーション", "オリハルコンの杖"], comment: "" },
     { date: "2021/12/4", sales: 615000, expenses: 185900, items: ["ミノスノー", "ミニ生肉ちゃん", "ミスリルの杖"], comment: "" },
     { date: "2021/12/5", sales: 999000, expenses: 710000, items: ["ミノスノー", "ミニ生肉ちゃん", "ミスリルの杖"], comment: "" },
-    { date: "2021/12/6", sales: 1764000, expenses: 3024450, items: ["ミノスノー", "ミニ生肉ちゃん", "エリ草→ハイポーション"], comment: "魔石1000個購入" },
+    { date: "2021/12/6", sales: 1764000, expenses: 3024450, items: ["ミノスノー", "ミニ生肉ちゃん", "エリ草→ハイポーション"], comment: "魔石×1000購入" },
     { date: "2021/12/7", sales: 863700, expenses: 217620, items: ["ミノスノー", "ハイポーション", "作業着"], comment: "" },
     { date: "2021/12/8", sales: 1113000, expenses: 346540, items: ["ミノスノー", "作業着", "オリハルコンの杖の杖"], comment: "" },
     { date: "2021/12/9", sales: 956350, expenses: 107635, items: ["ミノスノー", "作業着", "オリハルコンの杖の杖"], comment: "" },
@@ -16,5 +16,8 @@ window.SOLD_OUT_BALANCE = [
     { date: "2021/12/14", sales: 610600, expenses: 421060, items: [], comment: "" },
     { date: "2021/12/15", sales: 565000, expenses: 56000, items: [], comment: "" },
     { date: "2021/12/16", sales: 665000, expenses: 86500, items: [], comment: "" },
-    { date: "2021/12/17", sales: 3596000, expenses: 2757440, items: ["アイスクリーム", "オリハルコンの杖", "作業着"], comment: "気まぐれな妖精×20販売" }
+    { date: "2021/12/17", sales: 3596000, expenses: 2757440, items: ["アイスクリーム", "オリハルコンの杖", "作業着"], comment: "気まぐれな妖精×20販売、魔石×1000購入" },
+    { date: "2021/12/18", sales: 913000, expenses: 354300, items: ["アイスクリーム", "オリハルコンの杖", "エリ草"], comment: "" },
+    { date: "2021/12/19", sales: 917000, expenses: 296700, items: ["アイスクリーム", "オリハルコンの杖", "作業着"], comment: "" },
+    { date: "2021/12/20", sales: 857000, expenses: 265700, items: ["ミノスノー", "作業着", "ハイポーション"], comment: "" },
 ]
