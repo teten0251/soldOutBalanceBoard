@@ -20,4 +20,8 @@ window.SOLD_OUT_BALANCE = [
     { date: "2021/12/18", sales: 913000, expenses: 354300, items: ["アイスクリーム", "オリハルコンの杖", "エリ草"], comment: "" },
     { date: "2021/12/19", sales: 917000, expenses: 296700, items: ["アイスクリーム", "オリハルコンの杖", "作業着"], comment: "" },
     { date: "2021/12/20", sales: 857000, expenses: 265700, items: ["ミノスノー", "作業着", "ハイポーション"], comment: "" },
+    { date: "2021/12/21", sales: 691500, expenses: 714150, items: ["アイスクリーム", "作業着", "ハイポーション"], comment: "" },
+    { date: "2021/12/22", sales: 1232500, expenses: 484250, items: ["ミノスノー", "オリハルコンの杖", "アイスクリーム"], comment: "PLがオリハルコンの杖購入" },
+    { date: "2021/12/23", sales: 2123050, expenses: 806305, items: ["アイスクリーム", "ミノスノー", "オリハルコンの杖"], comment: "" },
+    { date: "2021/12/24", sales: 802000, expenses: 549700, items: ["ミノスノー", "ミノスノー", "ハイポーション"], comment: "" },
 ]
