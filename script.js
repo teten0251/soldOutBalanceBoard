@@ -45,7 +45,13 @@ function showChart() {
     textBox.style.visibility = "visible";
 
     let innerTextBox = document.getElementById("innerTextBox");
-    for (let i = 0; i < 30; i++) {
+
+    let length = balanceData.length;
+    if (length > 30) {
+        length = 30;
+    }
+
+    for (let i = 0; i < length; i++) {
         let text = "";
         if (balanceData[i].items.length != 0 || balanceData[i].comment) {
             text += "[" + balanceData[i].date + "]";
@@ -68,6 +74,12 @@ function showChart() {
         p.textContent = text;
         innerTextBox.appendChild(p);
     }
+
+    let oneWeekTable = document.getElementById("oneWeekTable");
+    createTableData(oneWeekTable, balanceData, 7);
+
+    let oneMonthTable = document.getElementById("oneMonthTable");
+    createTableData(oneMonthTable, balanceData, 30);
 }
 
 function createConfig(balanceData, period) {
@@ -150,3 +162,51 @@ function createConfig(balanceData, period) {
     return config;
 }
 
+function createTableData(table, balanceData, period) {
+    const salesData = [], expensesData = [], benefitData = [];
+
+    if (balanceData.length < period) {
+        period = balanceData.length;
+    }
+
+    for (let i = 0; i < period; i++) {
+        const n = period - i - 1;
+        salesData.push(balanceData[n].sales);
+        expensesData.push(balanceData[n].expenses);
+        benefitData.push(balanceData[n].sales - balanceData[n].expenses);
+    }
+    const sumSales = salesData.reduce(function (a, b) {
+        return a + b;
+    });
+    const sumExpenses = expensesData.reduce(function (a, b) {
+        return a + b;
+    });
+    const sumBenefit = benefitData.reduce(function (a, b) {
+        return a + b;
+    });
+
+    let tr = document.createElement("tr");
+
+    let td1 = document.createElement("td");
+    td1.innerText = "総売上";
+    let td2 = document.createElement("td");
+    td2.innerText = new Intl.NumberFormat().format(sumSales);
+
+    let td3 = document.createElement("td");
+    td3.innerText = "総経費";
+    let td4 = document.createElement("td");
+    td4.innerText = new Intl.NumberFormat().format(sumExpenses);
+
+    let td5 = document.createElement("td");
+    td5.innerText = "総利益";
+    let td6 = document.createElement("td");
+    td6.innerText = new Intl.NumberFormat().format(sumBenefit);
+
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    tr.appendChild(td3);
+    tr.appendChild(td4);
+    tr.appendChild(td5);
+    tr.appendChild(td6);
+    table.appendChild(tr);
+}

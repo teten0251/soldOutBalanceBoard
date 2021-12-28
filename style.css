@@ -27,10 +27,18 @@ label{
 #oneWeekBox{
     width: 65%;
     margin: 0 auto;
-    padding: 2%;
+    padding: 1%;
 }
 #oneMonthBox{
     width: 65%;
     margin: 0 auto;
-    padding: 2%;
+    padding: 1%;
+}
+label{
+    font-size: 1.0rem;
+    text-decoration: underline;
+}
+td{
+    font-size: 0.8rem;
+    color: gray;
 }
