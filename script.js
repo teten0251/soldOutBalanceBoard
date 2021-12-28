@@ -181,9 +181,11 @@ function createTableData(table, balanceData, period) {
     const sumExpenses = expensesData.reduce(function (a, b) {
         return a + b;
     });
+    const sumExpensesRate = parseInt(sumExpenses / sumSales * 100);
     const sumBenefit = benefitData.reduce(function (a, b) {
         return a + b;
     });
+    const sumBenefitRate = 100 - sumExpensesRate;
 
     let tr = document.createElement("tr");
 
@@ -195,12 +197,12 @@ function createTableData(table, balanceData, period) {
     let td3 = document.createElement("td");
     td3.innerText = "総経費";
     let td4 = document.createElement("td");
-    td4.innerText = new Intl.NumberFormat().format(sumExpenses);
+    td4.innerText = new Intl.NumberFormat().format(sumExpenses) + "(" + sumExpensesRate + "%)";
 
     let td5 = document.createElement("td");
     td5.innerText = "総利益";
     let td6 = document.createElement("td");
-    td6.innerText = new Intl.NumberFormat().format(sumBenefit);
+    td6.innerText = new Intl.NumberFormat().format(sumBenefit) + "(" + sumBenefitRate + "%)";
 
     tr.appendChild(td1);
     tr.appendChild(td2);
