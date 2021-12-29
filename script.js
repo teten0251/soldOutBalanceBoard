@@ -85,7 +85,7 @@ function showChart() {
 function createConfig(balanceData, period) {
     let config = {};
     if (period === 1) {
-        const labels = ["売上", "経費", "利益"];
+        const labels = ["収入", "支出", "利益"];
         const data = {
             labels: labels,
             datasets: [{
@@ -134,13 +134,13 @@ function createConfig(balanceData, period) {
             labels: labels,
             datasets: [
                 {
-                    label: '売上',
+                    label: '収入',
                     backgroundColor: 'rgb(255, 99, 132)',
                     borderColor: 'rgb(255, 99, 132)',
                     data: salesData,
                 },
                 {
-                    label: '経費',
+                    label: '支出',
                     backgroundColor: 'rgb(132, 162, 212)',
                     borderColor: 'rgb(132, 162, 212)',
                     data: expensesData,
@@ -190,12 +190,12 @@ function createTableData(table, balanceData, period) {
     let tr = document.createElement("tr");
 
     let td1 = document.createElement("td");
-    td1.innerText = "総売上";
+    td1.innerText = "総収入";
     let td2 = document.createElement("td");
     td2.innerText = new Intl.NumberFormat().format(sumSales);
 
     let td3 = document.createElement("td");
-    td3.innerText = "総経費";
+    td3.innerText = "総支出";
     let td4 = document.createElement("td");
     td4.innerText = new Intl.NumberFormat().format(sumExpenses) + "(" + sumExpensesRate + "%)";
 
