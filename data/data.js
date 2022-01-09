@@ -31,5 +31,12 @@ window.SOLD_OUT_BALANCE = [
     { date: "2021/12/29", sales: 992000, expenses: 3246960, items: ["ミノスノー", "ハイポーション", "作業着"], comment: "魔石×1200購入" },
     { date: "2021/12/30", sales: 562500, expenses: 266750, items: ["ハイポーション", "ハイポーション", "作業着"], comment: "" },
     { date: "2021/12/31", sales: 887200, expenses: 198720, items: ["ミノスノー", "ハイポーション", "作業着"], comment: "" },
-    { date: "2022/1/1", sales: 1220000, expenses: 359730, items: ["レザーグローブ", "オリハルコンの杖", "エリ草"], comment: "" }
+    { date: "2022/1/1", sales: 1220000, expenses: 359730, items: [], comment: "" },
+    { date: "2022/1/2", sales: 1962000, expenses: 1388000, items: [], comment: "" },
+    { date: "2022/1/3", sales: 857000, expenses: 85700, items: [], comment: "" },
+    { date: "2022/1/4", sales: 3293969, expenses: 2544397, items: [], comment: "" },
+    { date: "2022/1/5", sales: 991500, expenses: 662150, items: [], comment: "" },
+    { date: "2022/1/6", sales: 787100, expenses: 1522310, items: [], comment: "" },
+    { date: "2022/1/7", sales: 888900, expenses: 1021390, items: [], comment: "" },
+    { date: "2022/1/8", sales: 1010400, expenses: 145840, items: [], comment: "" }
 ]
